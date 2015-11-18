@@ -1,0 +1,26 @@
+.thumbnail>img {
+  height: 363px;
+  width: 260px;
+}
+.caption>h4{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.games {
+  text-align: center;
+}
+
+.games h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.view>.btn {
+  color: black;
+  font-weight: bold;
+}
+.view {
+  text-align: right;
+}

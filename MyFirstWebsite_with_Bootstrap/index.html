@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyFirstWebsite(with Bootstrap)</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/mystyles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <nav class="navbar navbar-inverse navbar-static-top" >
+        <div class="container">
+
+          <button class="navbar-toggle"
+            data-target=".navbar-responsive-collapse"
+            data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" id="logo" href="#"><img src="images/logo.jpg" alt="Your Logo"></a>
+
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav pull-right">
+              <li class="active"><a href="#">Home</a></li>
+
+              <li class><a href="games.html">Games</a></li>
+
+              <li class><a href="#myModal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div><!--end navbar-->
+
+      <div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button class="close" data-dismiss="modal">&times;</button>
+
+							<h4 class="modal-title">Enter Login Details</h4>
+						</div><!-- end modal-header -->
+						<div class="modal-body">
+
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputName">Username</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputName" placeholder="Username" type="text">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-lg-2 control-label" for="inputpassword">Password</label>
+									<div class="col-lg-10">
+										<input class="form-control" id="inputpassword" placeholder="Password" type="password">
+									</div>
+								</div>
+
+							</form>
+              <div class="login-btn">
+                <button class="btn btn-default btn-block" type="button">Login</button>
+              </div>
+
+						</div><!-- end modal-body -->
+
+					</div><!-- end modal-content -->
+				</div><!-- end modal-dialog -->
+			</div><!-- end myModal -->
+
+
+      <div class="carousel slide" id="myCarousel">
+
+      	<!-- Indicators -->
+      	<ol class="carousel-indicators">
+      		<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+      		<li data-slide-to="1" data-target="#myCarousel"></li>
+      		<li data-slide-to="2" data-target="#myCarousel"></li>
+      	</ol>
+
+      	<!-- Wrapper for slides -->
+      	<div class="carousel-inner">
+      		<div class="item active" id="slide1">
+      			<div class="carousel-caption">
+              <h4><a href="#">Need For Speed</a></h4>
+      				<p>Tonight We Ride</p>
+
+      			</div><!-- end carousel-caption-->
+      		</div><!-- end item -->
+
+      		<div class="item" id="slide2">
+      			<div class="carousel-caption">
+              <h4><a href="#">FIFA 16</a></h4>
+      				<p>Play Beautiful</p>
+      			</div><!-- end carousel-caption-->
+      		</div><!-- end item -->
+
+      		<div class="item" id="slide3">
+      			<div class="carousel-caption">
+      				<h4><a href="#">Awesome Game</a></h4>
+      				<p>Awesome Awesome Awesome</p>
+      			</div><!-- end carousel-caption-->
+      		</div><!-- end item -->
+      	</div><!-- carousel-inner -->
+
+      	<!-- Controls -->
+      	<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+      	<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+      </div><!-- end myCarousel -->
+      <div class="container">
+
+        <div class="row" id="featuresHeading">
+        	<div class="col-12">
+        		<h2>More Features</h2>
+        		<p class="lead">Cornhole kitsch Williamsburg pug bicycle rights vegan. Neutra food truck occupy kitsch sustainable.</p>
+        	</div><!-- end col-12 -->
+        </div><!-- end featuresHeading -->
+      </div>
+
+      <div id="features-wrapper">
+        <div class="features-wrap container">
+          <div class="row" id="features">
+          	<div class="col-sm-4 feature feature1">
+          		<div class="panel">
+          			<div class="panel-heading">
+          				<h3 class="panel-title">Games(PC & Console)</h3>
+          			</div><!-- end panel-heading -->
+          			<img src="images/console.png" alt="console">
+
+          			<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+
+          			<a href="#" class="btn btn-default btn-block">View all Games</a>
+          		</div><!-- end panel -->
+          	</div><!-- end feature -->
+
+          	<div class="col-sm-4 feature feature2">
+          		<div class="panel">
+          			<div class="panel-heading">
+          				<h3 class="panel-title">Community</h3>
+          			</div><!-- end panel-heading -->
+          			<img src="images/community1.png" alt="community" >
+
+          			<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+
+          			<a href="#'"class="btn btn-default btn-block">Join Now</a>
+          		</div><!-- end panel -->
+          	</div><!-- end feature -->
+
+          	<div class="col-sm-4 feature feature3">
+          		<div class="panel">
+          			<div class="panel-heading">
+          				<h3 class="panel-title">For Mobiles & Tablets</h3>
+          			</div><!-- end panel-heading -->
+          			<img src="images/phone.png" alt="Bootstrap 3">
+
+          			<p>90's authentic single-origin coffee stumptown Pinterest. Fap aesthetic dreamcatcher pickled Brooklyn irony.</p>
+
+          			<a href="#" class="btn btn-default btn-block">View all Apps</a>
+          		</div><!-- end panel -->
+          	</div><!-- end feature -->
+          </div><!-- end features -->
+        </div>
+      </div><!--end features-wrapper-->
+
+      <div class="container" id="two-rows-header">
+        <h2>Two Awesome Rows</h2>
+      </div>
+
+      <div id="two-rows" class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="images/her03.jpg" alt="row1-img" />
+          </div>
+          <div class="col-sm-6">
+            <h3>The First Awesome Row</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+              <a href="#" class="btn btn-default btn-small">Learn More</a>
+            </p>
+          </div>
+      </div><!--end row 1-->
+      <hr>
+        <div class="row" id="row-2">
+          <div class="col-sm-6">
+            <h3>And The Second</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+              <a href="#" class="btn btn-default btn-small">Learn More</a>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="images/PS4.jpg" alt="row1-img" />
+          </div>
+        </div><!--end second-row-->
+
+      </div><!--end two-rows-->
+
+      <footer>
+      	<div class="container">
+      		<div class="row">
+
+      			<div class="col-xs-6 col-sm-2">
+      				<h5>Navigation</h5>
+      				<ul class="unstyled">
+      					<li><a href="#">Home</a></li>
+      					<li><a href="#">Services</a></li>
+      					<li><a href="#">Links</a></li>
+      					<li><a href="#">Contact</a></li>
+      				</ul>
+      			</div><!-- end col-sm-2 -->
+            <div class="col-xs-6 col-sm-2">
+      				<h5>Navigation</h5>
+      				<ul class="unstyled">
+      					<li><a href="#">Home</a></li>
+      					<li><a href="#">Services</a></li>
+      					<li><a href="#">Links</a></li>
+      					<li><a href="#">Contact</a></li>
+      				</ul>
+      			</div><!-- end col-sm-2 -->
+            <div class="col-xs-6 col-sm-2">
+      				<h5>Navigation</h5>
+      				<ul class="unstyled">
+      					<li><a href="#">Home</a></li>
+      					<li><a href="#">Services</a></li>
+      					<li><a href="#">Links</a></li>
+      					<li><a href="#">Contact</a></li>
+      				</ul>
+      			</div><!-- end col-sm-2 -->
+
+      			<div class="col-xs-6 col-sm-2 follow">
+      				<h5>Follow Us</h5>
+              <ul class="unstyled">
+                <li><a href="#"><img src="images/fb_logo.png" alt="fb-logo" /></a></li>
+                <li><a href="#"><img src="images/twitter-logo.png" alt="twitter-logo" /></a></li>
+                <li><a href=""><img src="images/g+logo.png" alt="g+logo" /></a></li>
+              </ul>
+      			</div><!-- end col-sm-2 -->
+
+      		</div><!-- end row -->
+          <hr>
+          <div class="copyright">
+            <p>Copyright (c) 2015 Copyright Holder All Rights Reserved.</p>
+          </div>
+      	</div><!-- end container -->
+      </footer>
+
+    </div><!--end main-->
+
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+  </body>
+</html>
